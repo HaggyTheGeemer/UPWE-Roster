@@ -6,7 +6,23 @@
     <title>UPWE Roster Page</title>
     <link rel="stylesheet" href="webpage.css">
     <style>
-        /* Add this CSS code to your webpage.css file */
+        /* Style for the logo */
+        .logo {
+            display: inline-block;
+            width: 50px; /* Adjust the width as needed */
+            height: 50px; /* Adjust the height as needed */
+            background-image: url('Logo.png'); /* Use 'Logo.png' as the image source */
+            background-size: cover; /* Adjust as needed */
+            margin-right: 10px; /* Add spacing between the logo and title */
+        }
+
+        /* Style for the title */
+        .title {
+            display: inline-block;
+            font-size: 24px; /* Adjust the font size as needed */
+        }
+
+        /* Style for the roster section */
         .superstar {
             display: inline-block;
             width: 50%; /* Adjust to make them half the width of 776px */
@@ -23,9 +39,18 @@
 
         /* Style for the GitHub logo */
         .github-logo {
-            display: block;
-            margin: 20px auto; /* Adjust margin to position the image */
-            max-width: 100px; /* Adjust max width as needed */
+            width: 32px; /* Adjust the width as needed */
+            height: 32px; /* Adjust the height as needed */
+            background-image: url('Github.png'); /* Use 'Github.png' as the image source */
+            background-size: cover; /* Adjust as needed */
+            display: inline-block;
+            margin-left: 10px; /* Add spacing between GitHub logo and text */
+            vertical-align: middle; /* Align the GitHub logo vertically with the text */
+        }
+
+        /* Style for the GitHub text */
+        .github-text {
+            font-size: 14px; /* Adjust the font size as needed */
         }
     </style>
 </head>
@@ -38,27 +63,14 @@
     </header>
     <main>
         <section class="roster">
-            <div class="superstar">
-                <div class="image-box">
-                    <img src="LivMorgan.png" alt="Liv Morgan with black background">
-                    <h2>Liv Morgan</h2>
-                    <p>Current Raw Women's Champion</p>
-                </div>
-            </div>
-            <div class="superstar">
-                <div class="image-box">
-                    <img src="CedricAlexander.png" alt="Cedric Alexander with black background">
-                    <h2>Cedric Alexander</h2>
-                    <p>Universal Champion</p>
-                </div>
-            </div>
-            <!-- Add more superstar sections as needed -->
+            <!-- Superstar sections here -->
         </section>
     </main>
     <footer style="text-align: center; font-size: 12pt; padding: 20px;">
         <p>&copy; 2023 Property of UPWE, Please do not copy as this is my own body of work.</p>
+        <!-- GitHub logo and text -->
+        <div class="github-logo"></div>
+        <span class="github-text">GitHub</span>
     </footer>
-    <!-- GitHub attribution image -->
-    <img src="Githublogo.png" alt="GitHub Logo" class="github-logo">
 </body>
 </html>
