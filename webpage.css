@@ -1,71 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UPWE Roster Page</title>
-    <link rel="stylesheet" href="webpage.css">
-    <style>
-        /* Style for the logo */
-        .logo {
-            display: inline-block;
-            width: 50px; /* Adjust the width as needed */
-            height: 50px; /* Adjust the height as needed */
-            background-image: url('Logo.png'); /* Use 'Logo.png' as the image source */
-            background-size: cover; /* Adjust as needed */
-            margin-right: 10px; /* Add spacing between the logo and title */
-        }
+/* webpage.css */
 
-        /* Style for the title */
-        .title {
-            display: inline-block;
-            font-size: 24px; /* Adjust the font size as needed */
-        }
+body {
+    background-image: url('GalaxyPurple.jpg'); /* Set the background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white; /* Set text color to white for better visibility */
+}
 
-        /* Style for the roster section */
-        .superstar {
-            display: inline-block;
-            width: 50%; /* Adjust to make them half the width of 776px */
-            margin: 10px; /* Add spacing between superstars */
-            vertical-align: top; /* Align superstars to the top */
-            text-align: center;
-            box-sizing: border-box; /* Include padding and borders in width and height */
-        }
+.superstar {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-        .superstar img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-    <header style="text-align: center;">
-        <!-- Logo -->
-        <div class="logo"></div>
-        <!-- Title -->
-        <h1 class="title">UPWE Roster Page</h1>
-    </header>
-    <main>
-        <section class="roster">
-            <div class="superstar">
-                <div class="image-box">
-                    <img src="LivMorgan.png" alt="Liv Morgan with black background">
-                    <h2>Liv Morgan</h2>
-                    <p>Current Raw Women's Champion</p>
-                </div>
-            </div>
-            <div class="superstar">
-                <div class="image-box">
-                    <img src=" CedricAlexander.png" alt="Cedric Alexander with black background">
-                    <h2>Cedric Alexander</h2>
-                    <p>Current Universal Champion</p>
-                </div>
-            </div>
-            <!-- Add more superstar sections as needed -->
-        </section>
-    </main>
-    <footer style="text-align: center; font-size: 12pt; padding: 20px;">
-        <p>&copy; 2023 Property of UPWE, Please do not copy as this is my own body of work.</p>
-    </footer>
-</body>
-</html>
+.image-box {
+    background-color: black;
+    display: inline-block;
+    width: 776px;
+    height: 776px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.superstar h2 {
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.superstar p {
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+/* Style for the logo */
+.logo {
+    display: inline-block;
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background-image: url('Logo.png'); /* Use 'Logo.png' as the image source */
+    background-size: cover; /* Adjust as needed */
+    margin-right: 10px; /* Add spacing between the logo and title */
+}
