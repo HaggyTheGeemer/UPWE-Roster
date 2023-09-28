@@ -51,3 +51,13 @@ body {
     right: 10px;
     z-index: 1;
 }
+
+/* Style for the logo */
+.logo {
+    display: inline-block;
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background-image: url('Logo.png'); /* Use 'Logo.png' as the image source */
+    background-size: cover; /* Adjust as needed */
+    margin-right: 10px; /* Add spacing between the logo and title */
+}
