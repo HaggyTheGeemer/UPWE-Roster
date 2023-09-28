@@ -1,0 +1,53 @@
+/* webpage.css */
+
+body {
+    background-image: url('GalaxyPurple.jpg'); /* Set the background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white; /* Set text color to white for better visibility */
+}
+
+.superstar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-box {
+    background-color: black;
+    display: inline-block;
+    width: 776px;
+    height: 776px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.superstar h2 {
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.superstar p {
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+}
