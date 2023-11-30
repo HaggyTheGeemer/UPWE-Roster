@@ -36,17 +36,59 @@
             max-width: 100%;
             height: auto;
         }
+
+        /* Style for the navigation bar */
+        .navbar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 200px; /* Adjust the width as needed */
+            background-color: #333; /* Set the background color */
+            padding-top: 20px; /* Adjust the top padding as needed */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a box shadow for a subtle effect */
+            z-index: 1; /* Ensure the navigation bar is above other elements */
+        }
+
+        .navbar a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 1px solid #555; /* Add a border between menu items */
+        }
+
+        .navbar a:hover {
+            background-color: #555; /* Change background color on hover */
+        }
+
+        /* Adjust the main content to avoid overlapping with the navigation bar */
+        main {
+            margin-left: 200px; /* Adjust the margin to match the width of the navigation bar */
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Superstars</a>
+        <a href="#">Champions</a>
+        <!-- Add more links as needed -->
+    </div>
+
     <header style="text-align: center;">
         <!-- Logo -->
         <div class="logo"></div>
         <!-- Title -->
         <h1 class="title">UPWE Roster Page</h1>
     </header>
+    
     <!-- Current Champions -->
     <h2 class="title" style="text-align: center;">Current UPWE Champions</h2>
+    
     <main>
         <section class="roster">
             <div class="superstar">
@@ -63,14 +105,13 @@
                     <p>Current World Heavyweight Champion</p>
                 </div>
             </div>
-   <!-- Additional Superstar 1 -->
+            <!-- Additional Superstar 1 -->
             <div class="superstar">
                 <div class="image-box">
                     <img src="CharlotteFlair.png" alt="Charlotte Flair with black background">
                     <h2>Charlotte Flair</h2>
                 </div>
             </div>
-            
             <!-- Additional Superstar 2 -->
             <div class="superstar">
                 <div class="image-box">
@@ -80,6 +121,7 @@
             </div>
         </section>
     </main>
+    
     <footer style="text-align: center; font-size: 12pt; padding: 20px;">
         <p>&copy; 2023 Property of UPWE, Please do not copy as this is my own body of work.</p>
         <p style="font-size: 8pt;">Special thank you to GitHub</p>
