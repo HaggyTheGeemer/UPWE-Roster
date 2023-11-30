@@ -98,13 +98,13 @@ body {
     position: absolute;
     top: 0; /* Adjust as needed */
     right: 0; /* Adjust as needed */
+    width: auto; /* Adjust the width as needed */
+    min-width: 50px; /* Adjust the minimum width as needed */
     border-radius: 5px;
     z-index: 1; /* Ensure the box is above the image */
 }
 
 .instagram-handle-box p {
     margin: 0;
-    color: #000; /* Adjust the text color */
-}
     color: #000; /* Adjust the text color */
 }
