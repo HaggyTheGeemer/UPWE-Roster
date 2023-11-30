@@ -99,9 +99,12 @@ body {
     top: 0; /* Adjust as needed */
     right: 0; /* Adjust as needed */
     border-radius: 5px;
+    z-index: 1; /* Ensure the box is above the image */
 }
 
 .instagram-handle-box p {
     margin: 0;
+    color: #000; /* Adjust the text color */
+}
     color: #000; /* Adjust the text color */
 }
