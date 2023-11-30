@@ -89,25 +89,3 @@ body {
 .section-champions {
     color: gold;
 }
-
-
-/* Styles for Instagram handle box */
-.instagram-handle-box {
-    background-color: rgba(255, 255, 255, 0.8); /* Background color with some transparency */
-    padding: 5px;
-    position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
-    border-radius: 5px;
-    /* Add max-width to ensure the handle box stays within the image box */
-    max-width: calc(100% - 20px);
-    /* Add text-overflow and white-space properties to handle long usernames */
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.instagram-handle-box p {
-    margin: 0;
-    color: #000; /* Adjust the text color */
-}
