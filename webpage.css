@@ -23,7 +23,7 @@ body {
 /* Styles for the image box */
 .image-box {
     background-color: black;
-    display: inline-block;
+    display: flex;
     width: 490px;
     height: 490px;
     text-align: center;
@@ -96,11 +96,12 @@ body {
     background-color: rgba(255, 255, 255, 0.8); /* Background color with some transparency */
     padding: 5px;
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
+    top: 0; /* Adjust as needed */
+    right: 0; /* Adjust as needed */
     border-radius: 5px;
 }
 
 .instagram-handle-box p {
     margin: 0;
     color: #000; /* Adjust the text color */
+}
