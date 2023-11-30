@@ -33,14 +33,28 @@ body {
 }
 
 /* Styles for superstar names */
-.superstar h2, .superstar p {
+.superstar h2 {
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px; /* Adjusted from bottom to top */
+    left: 10px;
+    z-index: 1;
+}
+
+.superstar p {
     color: white;
     text-shadow: 1px 1px 2px #000;
     margin: 0;
     padding: 0;
     position: absolute;
     bottom: 10px;
+    right: 10px;
+    z-index: 1;
 }
+
 
 /* Styles for the logo */
 .logo {
