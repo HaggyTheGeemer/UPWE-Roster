@@ -95,12 +95,12 @@ body {
 .instagram-handle-box {
     background-color: rgba(255, 255, 255, 0.8); /* Background color with some transparency */
     padding: 5px;
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
     border-radius: 5px;
-    margin-left: 10px; /* Adjust as needed to create space between image-box and handle-box */
 }
 
 .instagram-handle-box p {
     margin: 0;
     color: #000; /* Adjust the text color */
-}
-
