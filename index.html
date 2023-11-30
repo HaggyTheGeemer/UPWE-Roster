@@ -6,39 +6,11 @@
     <title>UPWE Roster Page</title>
     <link rel="stylesheet" href="webpage.css">
     <style>
-        /* Style for the logo */
-        .logo {
-            display: inline-block;
-            width: 50px; /* Adjust the width as needed */
-            height: 50px; /* Adjust the height as needed */
-            background-image: url('Logo.png'); /* Use 'Logo.png' as the image source */
-            background-size: cover; /* Adjust as needed */
-            margin-right: 10px; /* Add spacing between the logo and title */
-        }
-
-        /* Style for the title */
-        .title {
-            display: inline-block;
-            font-size: 24px; /* Adjust the font size as needed */
-        }
-
-        /* Style for the roster section */
-        .superstar {
-            display: inline-block;
-            width: 50%; /* Adjust to make them half the width of 776px */
-            margin: 10px; /* Add spacing between superstars */
-            vertical-align: top; /* Align superstars to the top */
-            text-align: center;
-            box-sizing: border-box; /* Include padding and borders in width and height */
-        }
-
-        .superstar img {
-            max-width: 100%;
-            height: auto;
-        }
+        /* Your existing styles */
 
         /* Style for the navigation bar */
         .navbar {
+            display: none; /* Initially hide the navigation bar */
             position: fixed;
             left: 0;
             top: 0;
@@ -63,16 +35,11 @@
             background-color: #555; /* Change background color on hover */
         }
 
-        /* Add this code to the existing styles */
-.navbar a:hover {
-    background-color: purple; /* Change to the desired hover color */
-    color: white; /* Change to the desired text color on hover */
-}
+        /* Your existing styles */
 
-        
         /* Adjust the main content to avoid overlapping with the navigation bar */
         main {
-            margin-left: 200px; /* Adjust the margin to match the width of the navigation bar */
+            margin-left: 0; /* Adjust the margin to match the width of the navigation bar */
             padding: 20px;
         }
     </style>
@@ -91,6 +58,8 @@
         <div class="logo"></div>
         <!-- Title -->
         <h1 class="title">UPWE Roster Page</h1>
+        <!-- Symbol to toggle navigation bar -->
+        <div id="toggleNavbarSymbol" style="cursor: pointer;">&#9776;</div>
     </header>
     
     <!-- Current Champions -->
@@ -98,34 +67,7 @@
     
     <main>
         <section class="roster">
-            <div class="superstar">
-                <div class="image-box">
-                    <img src="LivMorgan.png" alt="Liv Morgan with black background">
-                    <h2>Liv Morgan</h2>
-                    <p>Current Raw Women's Champion</p>
-                </div>
-            </div>
-            <div class="superstar">
-                <div class="image-box">
-                    <img src="CedricAlexander.png" alt="Cedric Alexander with black background">
-                    <h2>Cedric Alexander</h2>
-                    <p>Current World Heavyweight Champion</p>
-                </div>
-            </div>
-            <!-- Additional Superstar 1 -->
-            <div class="superstar">
-                <div class="image-box">
-                    <img src="CharlotteFlair.png" alt="Charlotte Flair with black background">
-                    <h2>Charlotte Flair</h2>
-                </div>
-            </div>
-            <!-- Additional Superstar 2 -->
-            <div class="superstar">
-                <div class="image-box">
-                    <img src="BrittBaker.png" alt="Britt Baker with black background">
-                    <h2>Britt Baker</h2>
-                </div>
-            </div>
+            <!-- Your superstar sections here -->
         </section>
     </main>
     
@@ -136,5 +78,13 @@
             <img src="Logo.png" alt="GitHub Logo" style="max-width: 50px; max-height: 50px;">
         </div>
     </footer>
+
+    <script>
+        // JavaScript to toggle the visibility of the navigation bar
+        document.getElementById('toggleNavbarSymbol').addEventListener('click', function() {
+            var navbar = document.querySelector('.navbar');
+            navbar.style.display = (navbar.style.display === 'none' || navbar.style.display === '') ? 'block' : 'none';
+        });
+    </script>
 </body>
 </html>
