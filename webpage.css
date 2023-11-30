@@ -89,3 +89,20 @@ body {
 .section-champions {
     color: gold;
 }
+
+
+.instagram-handle-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with some transparency */
+    padding: 5px;
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the box */
+    border-radius: 5px;
+}
+
+.instagram-handle-box p {
+    margin: 0;
+    color: #000; /* Adjust the text color */
+}
+
