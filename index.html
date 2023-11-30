@@ -1,3 +1,6 @@
+The code you provided will work, but it adds a second `<h2>` element with the text "Current UPWE Champions" directly below the main title. If you want to keep the "Current UPWE Champions" as a separate section, you may consider placing it outside the header. Here's an updated version:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +49,8 @@
         <h1 class="title">UPWE Roster Page</h1>
     </header>
     <main>
-        <section class="roster">
+        <section class="champions">
+            <h2 class="title">Current UPWE Champions</h2>
             <div class="superstar">
                 <div class="image-box">
                     <img src="LivMorgan.png" alt="Liv Morgan with black background">
@@ -61,7 +65,7 @@
                     <p>Current World Heavyweight Champion</p>
                 </div>
             </div>
-            <!-- Add more superstar sections as needed -->
+            <!-- Add more champion sections as needed -->
         </section>
     </main>
     <footer style="text-align: center; font-size: 12pt; padding: 20px;">
@@ -73,3 +77,6 @@
     </footer>
 </body>
 </html>
+```
+
+In this version, I added a new `<section>` with the class "champions" to contain the "Current UPWE Champions" title and the champion information.
