@@ -7,6 +7,13 @@ body {
     color: white;
 }
 
+/* Style for the navigation bar */
+.navbar a:hover {
+    background-color: #555;
+    /* Change background color on hover */
+    color: purple; /* Change text color to purple on hover */
+}
+
 /* Styles for superstar section */
 .superstar {
     text-align: center;
