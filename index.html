@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,22 @@
 
         /* Style for the navigation bar */
         .navbar {
-            display: none; /* Initially hide the navigation bar */
+            display: none;
+            /* Initially hide the navigation bar */
             position: fixed;
             left: 0;
             top: 0;
             height: 100%;
-            width: 200px; /* Adjust the width as needed */
-            background-color: #333; /* Set the background color */
-            padding-top: 20px; /* Adjust the top padding as needed */
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a box shadow for a subtle effect */
-            z-index: 1; /* Ensure the navigation bar is above other elements */
+            width: 200px;
+            /* Adjust the width as needed */
+            background-color: #333;
+            /* Set the background color */
+            padding-top: 20px;
+            /* Adjust the top padding as needed */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            /* Add a box shadow for a subtle effect */
+            z-index: 1;
+            /* Ensure the navigation bar is above other elements */
         }
 
         .navbar a {
@@ -28,21 +35,25 @@
             color: white;
             text-decoration: none;
             text-align: center;
-            border-bottom: 1px solid #555; /* Add a border between menu items */
+            border-bottom: 1px solid #555;
+            /* Add a border between menu items */
         }
 
         .navbar a:hover {
-            background-color: #555; /* Change background color on hover */
+            background-color: #555;
+            /* Change background color on hover */
         }
 
         /* Your existing styles */
 
         /* Adjust the main content to avoid overlapping with the navigation bar */
         main {
-            margin-left: 0; /* Adjust the margin to match the width of the navigation bar */
+            margin-left: 0;
+            /* Adjust the margin to match the width of the navigation bar */
             padding: 20px;
         }
-	 /* Adjusted styling for the superstar images */
+
+        /* Adjusted styling for the superstar images */
         .superstar .image-box {
             position: relative;
         }
@@ -54,10 +65,33 @@
             margin: 0 auto;
             position: absolute;
             bottom: 0;
-            width: 80%; /* Adjust the width as needed */
+            width: 80%;
+            /* Adjust the width as needed */
+        }
+
+        .superstar h2,
+        .superstar p {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+            color: white;
+            text-shadow: 1px 1px 2px #000;
+            margin: 0;
+            padding: 0;
+            bottom: 10px;
+        }
+
+        .superstar h2 {
+            left: 0;
+        }
+
+        .superstar p {
+            right: 0;
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <div class="navbar">
@@ -75,10 +109,10 @@
         <!-- Symbol to toggle navigation bar -->
         <div id="toggleNavbarSymbol" style="cursor: pointer;">&#9776;</div>
     </header>
-    
+
     <!-- Current Champions -->
     <h2 class="title section-champions" style="text-align: center;">Current UPWE Champions</h2>
-    
+
     <main>
         <section class="roster">
             <!-- Existing superstars -->
@@ -91,7 +125,8 @@
             </div>
             <div class="superstar">
                 <div class="image-box">
-                    <img src="CedricAlexander.jpg" alt="Cedric Alexander with black background" style="width: 490px;">
+                    <img src="CedricAlexander.jpg" alt="Cedric Alexander with black background"
+                        style="width: 490px;">
                     <h2>Cedric Alexander</h2>
                     <p>Current World Heavyweight Champion</p>
                 </div>
@@ -110,16 +145,16 @@
                     <p>Current Universal Champion</p>
                 </div>
             </div>
-			<div class="superstar">
+            <div class="superstar">
                 <div class="image-box">
                     <img src="SamiZayn.jpg" alt="Sami Zayn with black background" style="width: 490px;">
                     <h2>Sami Zayn</h2>
                     <p>Current Smackdown Tag Team Champion</p>
                 </div>
             </div>
-			
+
             <h2 class="title section-raw" style="text-align: center;">Raw Superstars</h2>
-            
+
             <!-- Additional Superstars in alphabetical order -->
             <div class="superstar">
                 <div class="image-box">
@@ -127,9 +162,9 @@
                     <h2>Darby Allin</h2>
                 </div>
             </div>
-            
+
             <h2 class="title section-smackdown" style="text-align: center;">Smackdown Superstars</h2>
-		
+
             <div class="superstar">
                 <div class="image-box">
                     <img src="BrittBaker.jpg" alt="Britt Baker with black background" style="width: 490px;">
@@ -162,7 +197,7 @@
             </div>
         </section>
     </main>
-    
+
     <footer style="text-align: center; font-size: 12pt; padding: 20px;">
         <p>&copy; 2023 Property of UPWE, Please do not copy as this is my own body of work.</p>
         <p style="font-size: 8pt;">Special thank you to GitHub</p>
@@ -173,10 +208,12 @@
 
     <script>
         // JavaScript to toggle the visibility of the navigation bar
-        document.getElementById('toggleNavbarSymbol').addEventListener('click', function() {
+        document.getElementById('toggleNavbarSymbol').addEventListener('click', function () {
             var navbar = document.querySelector('.navbar');
             navbar.style.display = (navbar.style.display === 'none' || navbar.style.display === '') ? 'block' : 'none';
         });
     </script>
 </body>
+
 </html>
+<!-- Updated at 12:33 AM -->
