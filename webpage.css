@@ -91,14 +91,12 @@ body {
 }
 
 
+/* Styles for the Instagram handle box */
 .instagram-handle-box {
     background-color: rgba(255, 255, 255, 0.8); /* Background color with some transparency */
     padding: 5px;
-    position: absolute;
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
-    transform: translate(-50%, -50%); /* Center the box */
     border-radius: 5px;
+    margin-left: 10px; /* Adjust as needed to create space between image-box and handle-box */
 }
 
 .instagram-handle-box p {
