@@ -89,3 +89,24 @@ body {
 .section-champions {
     color: gold;
 }
+
+/* Style for the UPWE Point System link */
+.point-system-link {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 24px;
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+}
+
+.point-system-link:hover {
+    background-color: gold;
+    color: black;
+}
